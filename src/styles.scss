@@ -18,3 +18,17 @@
 p {
   @apply leading-[1.6];
 }
+
+@font-face {
+  font-family: Ramona-Bold;
+  src: url('./assets/fonts/Ramona-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Ramona-Light;
+  src: url('./assets/fonts/Ramona-Light.ttf') format('truetype');
+}
+
+body {
+  font-family: Ramona-Bold, sans-serif;
+}
