@@ -1,9 +1,18 @@
-<div class="container">
+<div class="" (click)="playVideo()">
   <div>
-    <video autoplay loop muted playsinline class="absolute w-full">
+    <video id="video"  autoplay loop muted class="w-full">
       <source
         src="https://firebasestorage.googleapis.com/v0/b/estudiocelestina-18a5f.appspot.com/o/CELESTINA_home-banner-tv_EDIT.mp4?alt=media&token=79cd54df-ad62-4b05-b77f-15870fffe085"
       />
     </video>
+  </div>
+</div>
+<div class="w-full flex flex-col p-4">
+  <div class="grid grid-cols-2 gap-4">
+    <ng-container *ngFor="let item of listFilmes">
+      <div class="p-4">
+        <img src="{{item.img}}" alt="{{item.label}}" style="max-width: 100%; height: auto;">
+      </div>
+    </ng-container>
   </div>
 </div>
