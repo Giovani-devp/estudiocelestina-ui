@@ -10,7 +10,7 @@ export class NavMenuComponent {
   constructor(private router: Router) { }
 
   itensMenu: any = [
-    { label: 'Filmes', url: '/filmes' },
+    { label: 'Filmes', url: '/' },
     { label: 'Sobre', url: '/sobre' },
     { label: 'Contato', url: '/contato' }
   ]
