@@ -1,9 +1,26 @@
-<div class="container">
+<div id="div-video" class="bg-cinza" #divVideo>
   <div>
-    <video autoplay loop muted playsinline class="absolute w-full">
-      <source
-        src="https://firebasestorage.googleapis.com/v0/b/estudiocelestina-18a5f.appspot.com/o/CELESTINA_home-banner-tv_EDIT.mp4?alt=media&token=79cd54df-ad62-4b05-b77f-15870fffe085"
-      />
+    <video id="video" autoplay loop muted class="w-full -ml-[1px]">
+      <source src="./assets/videos/CELESTINA_home-banner-tv_EDIT.mp4" />
     </video>
+  </div>
+</div>
+<div class="w-full flex flex-col p-4">
+  <div class="grid grid-cols-2 gap-4">
+    <ng-container *ngFor="let item of listFilmes">
+      <div class="p-4 relative group cursor-pointer">
+        <img src="{{item.img}}" alt="{{item.label}}" class="" style="max-width: 100%; height: auto; ">
+        <div class="group-hover:opacity-100 opacity-0 bg-[url('./assets/images/hover_V1.png')] bg-cover absolute top-[25%] left-[10%] w-[80%] h-[50%] group-hover:flex justify-center items-center duration-150">
+          <div class="flex flex-col">
+            <div class="text-[40px]">
+              {{item.label}}
+            </div>
+            <div class="text-center text-[28px]">
+              {{item.ano}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
   </div>
 </div>
