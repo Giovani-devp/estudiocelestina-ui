@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +12,11 @@ import { ContatoComponent } from './modules/contato/contato.component';
 import { SobreComponent } from './modules/sobre/sobre.component';
 import { NotFoundComponent } from './modules/not-found/not-found.component';
 import { PaginaInicialComponent } from './modules/pagina-inicial/pagina-inicial.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -20,11 +27,21 @@ import { PaginaInicialComponent } from './modules/pagina-inicial/pagina-inicial.
     ContatoComponent,
     SobreComponent,
     PaginaInicialComponent,
-    NotFoundComponent
+    NotFoundComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      defaultLanguage: 'pt',
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

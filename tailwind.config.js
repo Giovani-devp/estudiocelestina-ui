@@ -14,6 +14,10 @@ module.exports = {
         verde:'#A59D47',
         azulsky: '#A0DCE5',
         azul: '#0079C7'
+      },
+      fontFamily: {
+        'ramona-light': ['Ramona-Light', 'sans-serif'],
+        'ramona-bold': ['Ramona-Bold', 'sans-serif'],
       }
     },
   },
