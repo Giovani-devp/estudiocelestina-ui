@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { interval } from 'rxjs';
-import { Tooltip, initTWE } from 'tw-elements';
 
 @Component({
   selector: 'app-root',
