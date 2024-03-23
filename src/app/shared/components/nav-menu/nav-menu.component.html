@@ -5,7 +5,15 @@
   </div>
   <div  class="flex items-center h-full">
     <div *ngFor="let item of itensMenu" (click)="changeRoute(item)" class="mr-12 cursor-pointer">{{item.label}}</div>
-    <i class="fa fa-lg fa-instagram" aria-hidden="true"></i>
+    <div class="flex mr-5 margin">
+      <div (click)="changeLanguage('pt')" class="cursor-pointer hover:scale-105 duration-150 margin">
+        PT
+      </div>
+      <div (click)="changeLanguage('en')" class="cursor-pointer hover:scale-105 duration-150 ">
+        EN
+      </div>
+    </div>
+    <i class="fa fa-instagram" aria-hidden="true"></i>
   </div>
 </div>
 <!-- Navegation -->

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-nav-menu',
@@ -7,7 +8,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./nav-menu.component.scss']
 })
 export class NavMenuComponent {
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private translateService: TranslateService
+    ) { }
 
   itensMenu: any = [
     { label: 'Filmes', url: '/' },
@@ -19,5 +23,16 @@ export class NavMenuComponent {
     if (event) {
       this.router.navigate([`${event.url}`])
     }
+  }
+
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  changeLanguage(lang: string) {
+    this.translateService.use(lang);
   }
 }
