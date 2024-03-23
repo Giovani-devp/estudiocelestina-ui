@@ -18,6 +18,7 @@ module.exports = {
       fontFamily: {
         'ramona-light': ['Ramona-Light', 'sans-serif'],
         'ramona-bold': ['Ramona-Bold', 'sans-serif'],
+        'hkgrotesk-regular': ['HKGrotesk-Regular', 'sans-serif'],
       }
     },
   },
