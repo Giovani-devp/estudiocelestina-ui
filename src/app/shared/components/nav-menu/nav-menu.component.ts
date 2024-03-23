@@ -14,7 +14,7 @@ export class NavMenuComponent {
     ) { }
 
   itensMenu: any = [
-    { label: 'Filmes', url: '/' },
+    { label: 'Filmes', url: '/filmes' },
     { label: 'Sobre', url: '/sobre' },
     { label: 'Contato', url: '/contato' }
   ]
