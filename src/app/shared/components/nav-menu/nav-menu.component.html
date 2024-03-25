@@ -3,17 +3,19 @@
   <div>
     <img class="mx-auto h-15" alt="logo_animado" src="./assets/images/Logo_animado.gif" routerLink="/">
   </div>
-  <div  class="flex items-center h-full">
+  <div  class="flex items-center h-full font-ramona-bold">
     <div *ngFor="let item of itensMenu" (click)="changeRoute(item)" class="mr-12 cursor-pointer">{{item.label}}</div>
-    <div class="flex mr-5 margin">
-      <div (click)="changeLanguage('pt')" class="cursor-pointer hover:scale-105 duration-150 margin">
+    <div class="flex mr-8 margin">
+      <div (click)="changeLanguage('pt')" class="cursor-pointer hover:scale-105 duration-150 m4">
         PT
       </div>
       <div (click)="changeLanguage('en')" class="cursor-pointer hover:scale-105 duration-150 ">
         EN
       </div>
     </div>
-    <i class="fa fa-instagram" aria-hidden="true"></i>
+    <div>
+      <img class="h-7" src="./assets/icons/icon-instagram.svg">
+    </div>
   </div>
 </div>
 <!-- Navegation -->

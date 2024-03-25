@@ -13,6 +13,7 @@ import { SobreComponent } from './modules/sobre/sobre.component';
 import { NotFoundComponent } from './modules/not-found/not-found.component';
 import { PaginaInicialComponent } from './modules/pagina-inicial/pagina-inicial.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { FilmeDetalheComponent } from './modules/filme-detalhe/filme-detalhe.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
@@ -28,6 +29,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     SobreComponent,
     PaginaInicialComponent,
     NotFoundComponent,
+    FilmeDetalheComponent,
 
   ],
   imports: [
