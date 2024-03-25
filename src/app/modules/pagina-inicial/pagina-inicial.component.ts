@@ -1,4 +1,5 @@
 import { AfterContentInit, AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pagina-inicial',
@@ -8,13 +9,19 @@ import { AfterContentInit, AfterViewInit, Component, ElementRef, HostListener, O
 export class PaginaInicialComponent implements OnInit, AfterViewInit{
 
   listFilmes:any[] = [
-    {label:'Lé com Cré', ano: '2018', img: './assets/images/01_Lé com Cré/LCC.png'},
-    {label:'Cefalópodes', ano: '2018', img: './assets/images/02_Cefalópodes/Cefalópodes.png'},
-    {label:'Câmbio, Desligo', ano: '2018', img: './assets/images/01_Lé com Cré/01_LCC_crop/LCC_FINAL_01459.png'},
-    {label:'Cefalópodes', ano: '2018', img: './assets/images/01_Lé com Cré/01_LCC_crop/LCC_FINAL_01459.png'},
+    {id:'LeComCre', label:'Lé com Cré', ano: '2018', img: './assets/images/01_Lé com Cré/LCC.png'},
+    {id:'LeComCre', label:'Cefalópodes', ano: '2018', img: './assets/images/02_Cefalópodes/Cefalópodes.png'},
+    {id:'LeComCre', label:'Câmbio, Desligo', ano: '2018', img: './assets/images/01_Lé com Cré/01_LCC_crop/LCC_FINAL_01459.png'},
+    {id:'LeComCre', label:'Cefalópodes', ano: '2018', img: './assets/images/01_Lé com Cré/01_LCC_crop/LCC_FINAL_01459.png'},
 
   ]
   @ViewChild('divVideo') divVideo!: ElementRef;
+
+  constructor(
+    private route: Router
+  ){
+
+  }
 
   ngOnInit(): void {
     if (this.divVideo) {
@@ -39,5 +46,9 @@ export class PaginaInicialComponent implements OnInit, AfterViewInit{
         console.error(error);
       });
     }
+  }
+
+  navegate(rota:any){
+    this.route.navigate([rota]);
   }
 }
