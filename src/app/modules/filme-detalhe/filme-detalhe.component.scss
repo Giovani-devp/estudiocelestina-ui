@@ -11,3 +11,27 @@
 .sub{
   font-size: 26px;
 }
+.txt-size-faixa{
+  font-size: 34px;
+
+}
+.txt-faixa{
+  text-align: center;
+
+}
+.div-faixa{
+  margin-top: -74px;
+}
+@media (min-width: 1280px) {
+  .div-faixa {
+      margin-top: -70px;
+  }
+}
+@media (min-width: 1580px) {
+  .div-faixa {
+      margin-top: -100px;
+  }
+}
+.div-faixa-none{
+  width: 13%;
+}
