@@ -1,15 +1,15 @@
 <div class="bg-cinza">
-  <div class="div-black"></div>
+  <div class="bg-gray-900 w-full h-7"></div>
 
   <div class="w-full flex pt-2">
     <div class="mr-2 w-[33%]">
-      <img class="h-img object-cover" src="{{filme.images[0].url}}">
+      <img class="h-img object-cover" src="{{filme.images_1[currentIndex].url}}">
     </div>
     <div class="mr-2 w-[33%]">
-      <img class="h-img object-cover" src="{{filme.images[0].url}}">
+      <img class="h-img object-cover" src="{{filme.images_2[currentIndex].url}}">
     </div>
     <div class=" w-[33%]">
-      <img class="h-img object-cover" src="{{filme.images[0].url}}">
+      <img class="h-img object-cover" src="{{filme.images_3[currentIndex].url}}">
     </div>
   </div>
   <div class="flex justify-center">
@@ -18,17 +18,97 @@
       <h2 translate class="sub font-ramona-light font-[500]">{{filme.sub}}</h2>
       <h2 translate class="sub font-ramona-light font-[500]">{{filme.autor}}</h2>
       <h4 translate class="mt-4 font-ramona-light font-[500]">{{filme.texto_1}}</h4>
-
     </div>
   </div>
   <div class="relative">
     <img src="./assets/images/Filmes_faixa_1.png">
-    <div class="div-faixa flex text-[23px] top-0  bg-green-900 text-white w-[100%] xl:-mt-[70px]">
-      <div class="div-faixa-none txt-size-faixa w-[5%] h-full"> </div>
-      <div class="txt-size-faixa  w-[26%] h-full">Equipe</div>
-      <div class=" txt-size-faixa w-[32%] h-full">Elenco</div>
-      <div class="txt-size-faixa  w-[44%] h-full">Prêmios e Festivais</div>
-
+    <div class="div-faixa flex text-[23px] top-0 text-white w-[100%] -mt-[60px] xl:-mt-[75px] 2xl:-mt-[100px]">
+      <div class="txt-size-faixa w-[8%] h-full"> </div>
+      <div class="font-ramona-bold xl:text-[32px] w-[15%] h-full text-center cursor-pointer"(click)="content = 'equipe'">Equipe</div>
+      <div class="txt-size-faixa w-[8%] h-full"> </div>
+      <div class="font-ramona-bold xl:text-[32px] w-[15%] h-full text-gray-900 text-center cursor-pointer" (click)="content = 'elenco'">Elenco</div>
+      <div class="txt-size-faixa w-[8%] h-full"> </div>
+      <div class="font-ramona-bold xl:text-[32px] w-[30%] h-full text-gray-900 text-center cursor-pointer" (click)="content = 'premios'">Prêmios e Festivais</div>
+      <div class="txt-size-faixa w-[8%] h-full"></div>
+      <div class="txt-size-faixa w-[8%] h-full"></div>
     </div>
   </div>
+  <div class="mt-32 pb-[300px] pl-[8%] font-ramona-light">
+
+    <div *ngIf="content === 'equipe'">
+      <b>Equipe:</b><br>
+      Direção, Direção de Arte e Animação: Cassandra Reis<br>
+      Roteiro: Cassandra Reis e Mariana Lopes<br>
+      Produção: Mariana Lopes e Victor Casé<br>
+      Bonecos e Cenário: Cassandra Reis e Gabriel Barreto<br>
+      Direção de Fotografia e Correção de Cor: Gabriela Akashi<br>
+      Captação de Som e Montagem: Raquel Vieira<br>
+      Assistente de Produção: Flávia Lucena<br>
+      Efeitos Digitais: Yugo Hattori, Renan Ramiro<br>
+      Edição de som: Felipe Cadillac<br>
+      Mixagem: Sandro Costa<br>
+      Música e Direção Musical: Gustavo Kurlat<br>
+    </div>
+
+    <div *ngIf="content === 'elenco'">
+      <b>Elenco:</b><br>
+      Bárbara do Prado Rangel - Princesa Ruiva<br>
+      Caetano Anselmo Aidar - Cachorro<br>
+      João Pedro Simões Santos dos Reis - Adulto<br>
+      Matheus Gonçalves - Elefante<br>
+      Nicole Santos Silva - Dora, a aventureira<br>
+      Roger Mota - Artista<br>
+      Ysabelly Soares - Princesa de azul<br>
+    </div>
+
+    <div *ngIf="content === 'premios'">
+      <b>Prêmios:</b><br>
+      Prêmio Carlos Saldanha de Melhor Curta de Estudante Brasileiro (Anima Mundi 2018, Brasil)<br>
+      Prêmio do Júri Popular de Melhor Curta Infantil (Anima Mundi 2018, Brasil)<br>
+      TV Brasil Animada (FICI 2018, Brasil)<br>
+      Prêmio CIBA Cilect 2019 de Melhor Animação<br>
+      Grande Prêmio do Cinema Brasileiro na categoria curta de animação (2019, Brasil)<br>
+      Melhor curta no 2º Anima Ceará - Festival Nordestino de Animação, Game e Web<br><br>
+
+
+      <b>Seleção oficial:</b><br>
+      Lanterna Mágica – Festival Internacional de Animação (2018, Brasil)<br>
+      Anima Latina (2018, Argentina)<br>
+      Anima Mundi (2018, Brasil)<br>
+      DIA - Dia Internacional da Animação (2018, Brasil)<br>
+      FICI - Festival Internacional de Cinema Infantil (2018, Brasil)<br>
+      Animage - Festival Internacional de Animação de Pernambuco (2018, Brasil)<br>
+      Baixada Animada (2018, Brasil)<br>
+      Bienal de Curitiba (2018, Brasil)<br>
+      AnimaSyrus (2018, Grécia)<br>
+      6º BIFF - 6th BIFF - Brasilia International Film Festival (2018, Brasil)<br>
+      Cine Curtinhas (nov/2018 - Itaú Cultural)<br>
+      Sessão Especial de Curtas Brasil – Curta o Curta! (dez/2018 - CineSesc)<br>
+      Mi primer festival (2019, Peru)<br>
+      MONSTRA (2019, Portugal)<br>
+      International Stop Motion Festival OUR FEST (2019, Argentina).<br>
+      Projeto Cineminha (2019, Campinas/SP, Brasil)<br>
+      Mostrinha da Mostra Curta Audiovisual (2019, Campinas/SP, Brasil)<br>
+      Mostra de Cinema Infantil de Florianópolis (2019, Florianópolis, Brasil)<br>
+      4ª Recria Cine - Mostra de Cinema para Crianças e Adolescentes (2019, Minas Gerais, Brasil)<br>
+      Mostra Escolas de Cinema Ciba Cilect - Festival de Cinema Latino Americano de São Paulo (2019, São Paulo, Brasil)<br>
+      Festival comKids – Prix Jeunesse Iberoamericano (2019, São Paulo, Brasil)<br>
+      MIAU - Mostra Internacional Infantil de Audiovisual (2019, Ceará, Brasil)<br>
+      Projeto Cine Autorama (2019, São Paulo, Brasil)<br>
+      Festival Internacional de Curtas-Metragens de São Paulo (2019, SP, Brasil)<br>
+      Campus em Ação - TV Cultura (2019)<br>
+      Festival Internacional de Escuelas de Cine (2019, Uruguai)<br>
+      Sessão Volver (2019, São Paulo)<br>
+      Cine Museu da 13ª Primavera dos Museus (2019, MG, Brasil)<br>
+      17ª MUMIA (2019, MG, Brasil)<br>
+      Intersessões (2019, MG)<br>
+      Festival É Tudo Criança (2019, MG)<br>
+      Projeto Love’Art Resistance (2019, SP)<br>
+
+
+    </div>
+
+  </div>
+
 </div>
+

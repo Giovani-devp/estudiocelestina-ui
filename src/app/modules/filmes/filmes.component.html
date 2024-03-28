@@ -1,0 +1,10 @@
+<div class="grid-container">
+  <div class="card" *ngFor="let filme of listFilmes" (click)="navigate('filme/' + filme.id)">
+    <img [src]="filme.img" alt="imagem filmes" />
+    <div class="overlay">
+      <img [src]="filme.label" alt="label filmes" />
+      <div class="text-overlay">
+      </div>
+    </div>
+  </div>
+</div>
