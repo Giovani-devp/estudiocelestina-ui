@@ -7,9 +7,11 @@
 }
 
 .card {
+  cursor: pointer;
   border: none;
   padding: 15px;
   position: relative;
+  margin-top: 20px;
 }
 
 .card img {

@@ -1,41 +1,9 @@
-<!-- <div class="flex justify-center px-10">
-  <div class="w-full">
-    <div class="grid grid-cols-2 gap-4">
-      <ng-container *ngFor="let item of listFilmes">
-        <div
-          class="mx-auto relative group cursor-pointer"
-          (click)="navegate('filme/' + item?.id)"
-        >
-          <img
-            src="{{ item.img }}"
-            alt="{{ item.label }}"
-            class="max-width: 90%"
-          />
-          <div
-            class="group-hover:opacity-100 opacity-0 bg-[url('./assets/images/hover_V1.png')] bg-cover absolute top-[25%] left-[10%] w-[80%] h-[50%] group-hover:flex justify-center items-center duration-150"
-          >
-            <div class="flex flex-col group-hover:opacity-100 opacity-0">
-              <div class="text-[40px]">
-                {{ item.label }}
-              </div>
-              <div class="text-center text-[28px]">
-                {{ item.ano }}
-              </div>
-            </div>
-          </div>
-        </div>
-      </ng-container>
-    </div>
-  </div>
-</div> -->
-
 <div class="grid-container">
-  <div class="card" *ngFor="let filme of listFilmes">
-    <img [src]="filme.img" alt="{{ filme.label }}" />
+  <div class="card" *ngFor="let filme of listFilmes" (click)="navigate('filme/' + filme.id)">
+    <img [src]="filme.img" alt="imagem filmes" />
     <div class="overlay">
-      <img src="./assets/images/hover_V1.png" />
+      <img [src]="filme.label" alt="label filmes" />
       <div class="text-overlay">
-       Teste do meu texto texto
       </div>
     </div>
   </div>

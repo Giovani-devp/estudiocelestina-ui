@@ -1,7 +1,7 @@
 <!-- Navegation -->
 <div class="w-full bg-white flex justify-between items-center px-6 py-1 shadow-4">
   <div>
-    <img class="mx-auto h-60" alt="logo_animado" src="./assets/images/Logo_animado.gif" routerLink="/">
+    <img class="mx-auto h-60 cursor-pointer" alt="logo_animado" src="./assets/images/Logo_animado.gif" routerLink="/">
   </div>
   <div  class="flex items-center h-full font-ramona-bold">
     <div *ngFor="let item of itensMenu" (click)="changeRoute(item)" class="mr-12 cursor-pointer">{{item.label}}</div>
@@ -14,7 +14,7 @@
       </div>
     </div>
     <div>
-      <img class="h-7" src="./assets/icons/icon-instagram.svg">
+      <img class="h-3" src="./assets/icons/icon-instagram.svg">
     </div>
   </div>
 </div>

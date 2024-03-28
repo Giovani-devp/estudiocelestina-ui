@@ -14,14 +14,13 @@ export class FilmesComponent implements OnInit {
   }
 
   listFilmes: any[] = [
-    { id: 'LeComCre', label: 'Lé com Cré', ano: '2018', img: './assets/images/01_Lé com Cré/LCC.png' },
-    { id: 'LeComCre', label: 'Cefalópodes', ano: '2018', img: './assets/images/02_Cefalópodes/Cefalópodes.png' },
-    { id: 'LeComCre', label: 'Câmbio, Desligo', ano: '2018', img: './assets/images/01_Lé com Cré/01_LCC_crop/LCC_FINAL_01459.png' },
-    { id: 'LeComCre', label: 'Cefalópodes', ano: '2018', img: './assets/images/01_Lé com Cré/01_LCC_crop/LCC_FINAL_01459.png' },
-
+    { id: 'LeComCre', label: '../../../assets/images/Nomes_blocos/LCC_nome.png', img: './assets/images/01_Lé com Cré/LCC.png' },
+    { id: 'Cefalopodes', label: '../../../assets/images/Nomes_blocos/CEL_nome.png', img: './assets/images/02_Cefalópodes/Cefalópodes.png' },
+    { id: 'CambioDesligo', label: '../../../assets/images/Nomes_blocos/CD_nome.png', img: './assets/images/01_Lé com Cré/01_LCC_crop/LCC_FINAL_01459.png' },
+    { id: 'Servicos', label: '../../../assets/images/Nomes_blocos/SERVIÇOS_nome.png', img: './assets/images/BlocoServicos_FRAMES_V0212.png' },
   ]
 
-  navegate(rota: any) {
+  navigate(rota: any) {
     this.route.navigate([rota]);
   }
 
