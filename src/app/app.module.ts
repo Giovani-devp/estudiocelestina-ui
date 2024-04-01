@@ -13,7 +13,12 @@ import { NotFoundComponent } from './modules/not-found/not-found.component';
 import { PaginaInicialComponent } from './modules/pagina-inicial/pagina-inicial.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { FilmeDetalheComponent } from './modules/filme-detalhe/filme-detalhe.component';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -26,13 +31,19 @@ import { FilmeDetalheComponent } from './modules/filme-detalhe/filme-detalhe.com
     PaginaInicialComponent,
     NotFoundComponent,
     FilmeDetalheComponent,
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-
+    TranslateModule.forRoot({
+      defaultLanguage: 'pt',
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

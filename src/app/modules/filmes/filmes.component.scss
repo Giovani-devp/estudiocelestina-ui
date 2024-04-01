@@ -6,6 +6,12 @@
   background-color: #E6DED3;
 }
 
+@media (max-width: 640px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .card {
   cursor: pointer;
   border: none;

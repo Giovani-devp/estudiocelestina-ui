@@ -7,6 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./nav-menu.component.scss']
 })
 export class NavMenuComponent {
+  menuMobStyle = 'w-[0px]';
+
   constructor(
     private router: Router,
     ) { }
@@ -20,6 +22,7 @@ export class NavMenuComponent {
   public changeRoute(event: any) {
     if (event) {
       this.router.navigate([`${event.url}`])
+      this.closeMobMenu()
     }
   }
 
@@ -32,5 +35,13 @@ export class NavMenuComponent {
 
   changeLanguage(lang: string) {
     //this.translateService.use(lang);
+  }
+
+  openMobMenu(){
+    this.menuMobStyle = 'w-[300px]'
+  }
+
+  closeMobMenu(){
+    this.menuMobStyle = 'w-[0px]'
   }
 }

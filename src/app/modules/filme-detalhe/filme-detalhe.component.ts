@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { FilmesService } from 'src/app/shared/services/filmes.service';
 
 @Component({
@@ -10,6 +11,7 @@ import { FilmesService } from 'src/app/shared/services/filmes.service';
 export class FilmeDetalheComponent {
 
   content = 'equipe'
+  content1 =' Equipe: \nDireção, Direção de Arte e Animação: Cassandra Reis '
   filme: any
   currentIndex = 0;
   preloadIndex = 1; // Defina quantas imagens à frente você deseja pré-carregar
@@ -17,7 +19,8 @@ export class FilmeDetalheComponent {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private filmesService: FilmesService
+    private filmesService: FilmesService,
+    private translateService: TranslateService
   ) {
 
   }
