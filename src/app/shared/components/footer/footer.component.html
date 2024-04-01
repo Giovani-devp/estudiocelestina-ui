@@ -1,26 +1,8 @@
-<!--
-  <div class="marquee-container bg-amarelo py-2 h-20 overflow-hidden">
-    <div class="marquee text-[40px]">
-      <span class="mx-10">o futuro será coletivo </span>
-      <span class="mx-10">o futuro será coletivo </span>
-      <span class="mx-10">o futuro será coletivo </span>
-      <span class="mx-10">o futuro será coletivo </span>
-    </div>
-    <div class="marquee text-[40px] {{visibleOrHidden}}">
-      <span class="mx-10 text-rosa">o futuro será coletivo </span>
-      <span class="mx-10">o futuro será coletivo </span>
-      <span class="mx-10">o futuro será coletivo </span>
-      <span class="mx-10 ">o futuro será coletivo </span>
-    </div>
-  </div>
--->
-<div>
 
+<div>
   <div>
-    <video id="video"  autoplay loop muted class="w-full">
-      <source
-        src="./assets/videos/CELESTINA_home-faixa.mp4"
-      />
+    <video id="video"  [autoplay]="true" [muted]="true" [loop]="true" class="w-full">
+      <source src="./assets/videos/CELESTINA_home-faixa.mp4" />
     </video>
   </div>
   <div class="flex justify-between px-6 pb-4 bg-[url('./assets/images/footer_V1.png')] bg-cover object-cover">
