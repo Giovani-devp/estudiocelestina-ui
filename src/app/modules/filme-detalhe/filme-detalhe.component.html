@@ -1,6 +1,4 @@
 <div class="bg-cinza">
-  <div class="bg-gray-900 w-full h-7"></div>
-
   <div class="w-full flex pt-2">
     <div class="mr-2 w-[33%]">
       <img class="h-img object-cover" src="{{filme.images_1[currentIndex].url}}">
@@ -13,7 +11,7 @@
     </div>
   </div>
   <div class="flex justify-center">
-    <div class="text-center py-10 w-[50%] px-10">
+    <div class="text-center py-10 sm:w-[50%] px-10">
       <h1 translate class="text-[50px] font-ramona-bold font-[500]">{{filme.title}}</h1>
       <h2 translate class="sub font-ramona-light font-[500]">{{filme.sub}}</h2>
       <h2 translate class="sub font-ramona-light font-[500]">{{filme.autor}}</h2>
@@ -22,13 +20,13 @@
   </div>
   <div class="relative">
     <img src="./assets/images/Filmes_faixa_1.png">
-    <div class="div-faixa flex text-[23px] top-0 text-white w-[100%] -mt-[60px] xl:-mt-[75px] 2xl:-mt-[100px]">
+    <div class="div-faixa flex text-[23px] top-0 text-white w-[100%] -mt-[30px] xl:-mt-[75px] 2xl:-mt-[100px]">
       <div class="txt-size-faixa w-[8%] h-full"> </div>
-      <div class="font-ramona-bold xl:text-[32px] w-[15%] h-full text-center cursor-pointer"(click)="content = 'equipe'">Equipe</div>
+      <div class="font-ramona-bold text-[12px] xl:text-[32px] w-[15%] h-full text-center cursor-pointer"(click)="content = 'equipe'">Equipe</div>
       <div class="txt-size-faixa w-[8%] h-full"> </div>
-      <div class="font-ramona-bold xl:text-[32px] w-[15%] h-full text-gray-900 text-center cursor-pointer" (click)="content = 'elenco'">Elenco</div>
+      <div class="font-ramona-bold text-[12px] xl:text-[32px] w-[15%] h-full text-gray-900 text-center cursor-pointer" (click)="content = 'elenco'">Elenco</div>
       <div class="txt-size-faixa w-[8%] h-full"> </div>
-      <div class="font-ramona-bold xl:text-[32px] w-[30%] h-full text-gray-900 text-center cursor-pointer" (click)="content = 'premios'">Prêmios e Festivais</div>
+      <div class="font-ramona-bold text-[12px] xl:text-[32px] w-[30%] h-full text-gray-900 text-center cursor-pointer" (click)="content = 'premios'">Prêmios e Festivais</div>
       <div class="txt-size-faixa w-[8%] h-full"></div>
       <div class="txt-size-faixa w-[8%] h-full"></div>
     </div>
