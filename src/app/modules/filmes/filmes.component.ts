@@ -16,7 +16,7 @@ export class FilmesComponent implements OnInit {
   listFilmes: any[] = [
     { id: 'LeComCre', label: '../../../assets/images/Nomes_blocos/LCC_nome.png', img: './assets/images/01_Lé com Cré/LCC.png' },
     { id: 'Cefalopodes', label: '../../../assets/images/Nomes_blocos/CEL_nome.png', img: './assets/images/02_Cefalópodes/Cefalópodes.png' },
-    { id: 'CambioDesligo', label: '../../../assets/images/Nomes_blocos/CD_nome.png', img: './assets/images/01_Lé com Cré/01_LCC_crop/LCC_FINAL_01459.png' },
+    { id: 'CambioDesligo', label: '../../../assets/images/Nomes_blocos/CD_nome.png', img: './assets/images/03_Câmbio, Desligo/CAM_01.png' },
     { id: 'Servicos', label: '../../../assets/images/Nomes_blocos/SERVIÇOS_nome.png', img: './assets/images/BlocoServicos_FRAMES_V0212.png' },
   ]
 
