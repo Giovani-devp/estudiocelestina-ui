@@ -1,4 +1,4 @@
-import { AfterContentInit, AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   templateUrl: './pagina-inicial.component.html',
   styleUrls: ['./pagina-inicial.component.scss']
 })
-export class PaginaInicialComponent implements OnInit, AfterViewInit{
+export class PaginaInicialComponent implements OnInit {
 
   listFilmes:any[] = [
     {id:'LeComCre', label:'Lé com Cré', ano: '2018', img: './assets/images/01_Lé com Cré/LCC.png'},
@@ -19,36 +19,15 @@ export class PaginaInicialComponent implements OnInit, AfterViewInit{
 
   constructor(
     private route: Router
-  ){
+  ) {
 
   }
 
   ngOnInit(): void {
-    if (this.divVideo) {
-      this.divVideo.nativeElement.addEventListener('click', this.playVideo.bind(this));
-    }
+
   }
 
-  ngAfterViewInit(): void {
-    this.playVideo();
-    this.divVideo.nativeElement.addEventListener('click', this.playVideo.bind(this));
-  }
-
-  @HostListener('window:scroll', ['$event'])
-  onScroll(event: Event) {
-    this.playVideo();
-  }
-
-  playVideo(): void {
-    const video = document.getElementById('video') as HTMLVideoElement;
-    if (video) {
-      video.play().catch(error => {
-        console.error(error);
-      });
-    }
-  }
-
-  navegate(rota:any){
+  navegate(rota: any) {
     this.route.navigate([rota]);
   }
 

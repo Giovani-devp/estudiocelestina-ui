@@ -14,7 +14,7 @@ export class FilmeDetalheComponent {
   content1 =' Equipe: \nDireção, Direção de Arte e Animação: Cassandra Reis '
   filme: any
   currentIndex = 0;
-  preloadIndex = 1; // Defina quantas imagens à frente você deseja pré-carregar
+  preloadIndex = 1;
   scrolling = false;
 
   constructor(
