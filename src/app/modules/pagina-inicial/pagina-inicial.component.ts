@@ -10,9 +10,9 @@ export class PaginaInicialComponent implements OnInit, AfterViewInit{
 
   listFilmes:any[] = [
     {id:'LeComCre', label:'Lé com Cré', ano: '2018', img: './assets/images/01_Lé com Cré/LCC.png'},
-    {id:'LeComCre', label:'Cefalópodes', ano: '2018', img: './assets/images/02_Cefalópodes/Cefalópodes.png'},
-    {id:'LeComCre', label:'Câmbio, Desligo', ano: '2018', img: './assets/images/01_Lé com Cré/01_LCC_crop/LCC_FINAL_01459.png'},
-    {id:'LeComCre', label:'Cefalópodes', ano: '2018', img: './assets/images/01_Lé com Cré/01_LCC_crop/LCC_FINAL_01459.png'},
+    {id:'Cefalopodes', label:'Cefalópodes', ano: '2018', img: './assets/images/02_Cefalópodes/Cefalópodes.png'},
+    {id:'CambioDesligo', label:'Câmbio, Desligo', ano: '2018', img: './assets/images/03_Câmbio, Desligo/CAM_01.png'},
+    {id:'Servicos', label:'Serviços', ano: '2018', img: './assets/images/04_Serviços/03/BlocoServicos_FRAMES_V0226.png'},
 
   ]
   @ViewChild('divVideo') divVideo!: ElementRef;
@@ -51,4 +51,6 @@ export class PaginaInicialComponent implements OnInit, AfterViewInit{
   navegate(rota:any){
     this.route.navigate([rota]);
   }
+
+
 }
