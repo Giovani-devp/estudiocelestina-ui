@@ -1,5 +1,5 @@
-<!-- Navegation -->
-<div class="w-full bg-white flex justify-between items-center px-6 py-1 shadow-4">
+<!-- Navegation Web -->
+<div class="w-full bg-white hidden sm:flex justify-between items-center px-6 py-1 shadow-4 overflow-y-hidden">
   <div>
     <img class="mx-auto h-60 cursor-pointer" alt="logo_animado" src="./assets/images/Logo_animado.gif" routerLink="/">
   </div>
@@ -14,8 +14,58 @@
       </div>
     </div>
     <div>
-      <img class="h-3" src="./assets/icons/icon-instagram.svg">
+      <img class="h-5" src="./assets/icons/icon-instagram.svg">
     </div>
   </div>
 </div>
-<!-- Navegation -->
+<!-- Navegation Web -->
+<!-- Navegation Mobile -->
+<div class="w-full relative sm:hidden flex justify-between items-center px-6 py-1 shadow-4">
+  <div>
+    <img routerLink="/" class="mx-auto h-[80px]" alt="logo_animado" src="./assets/images/Logo_animado.gif">
+  </div>
+  <div>
+    <button
+      (click)="openMobMenu()"
+      type="button">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-8 w-8">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+    </button>
+  </div>
+</div>
+<div class="bg-white pt-5 shadow-xl fixed z-50 h-[100vh] top-0 right-0 duration-150 {{menuMobStyle}} overflow-y-hidden">
+  <div *ngFor="let item of itensMenu">
+    <div class="p-5" (click)="changeRoute(item)">
+      {{item.label}}
+    </div>
+  </div>
+
+  <div class="absolute bottom-[90px] w-full" (click)="closeMobMenu()">
+    <div class="flex ml-5 margin">
+      <div (click)="changeLanguage('pt')" class="cursor-pointer hover:scale-105 duration-150 m4">
+        PT
+      </div>
+      <div (click)="changeLanguage('en')" class="cursor-pointer hover:scale-105 duration-150 ">
+        EN
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-0  border border-t-2 w-full " (click)="closeMobMenu()">
+    <div class="flex p-5 justify-between">
+      <div>
+        <img class="h-7" src="./assets/icons/icon-instagram.svg">
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 right-0">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m15 15 6-6m0 0-6-6m6 6H9a6 6 0 0 0 0 12h3" />
+      </svg>
+    </div>
+  </div>
+</div>
+
+<div
+  *ngIf="menuMobStyle === 'w-[300px]'"
+  class="w-full h-[100vh] bg-black opacity-50 absolute z-10 sm:z-0 flex sm:hidden overflow-y-hidden"
+  (click)="closeMobMenu()"
+></div>
+<!-- Navegation Mobile -->
