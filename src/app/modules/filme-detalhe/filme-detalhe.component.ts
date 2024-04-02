@@ -29,6 +29,7 @@ export class FilmeDetalheComponent {
     const id = this.activatedRoute.snapshot.paramMap.get('id');
     this.filme = this.filmesService.listFilms.find(filme => filme.id === id);
     this.preloadNextImages();
+    this.scrollToTop();
   }
 
   // @HostListener('window:scroll', ['$event'])
@@ -75,4 +76,12 @@ export class FilmeDetalheComponent {
       }
     }
   }
+
+  scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
 }

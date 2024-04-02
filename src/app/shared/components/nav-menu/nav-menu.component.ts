@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-nav-menu',
@@ -11,6 +12,7 @@ export class NavMenuComponent {
 
   constructor(
     private router: Router,
+    private translateService: TranslateService
     ) { }
 
   itensMenu: any = [
@@ -34,7 +36,7 @@ export class NavMenuComponent {
   }
 
   changeLanguage(lang: string) {
-    //this.translateService.use(lang);
+    this.translateService.use(lang);
   }
 
   openMobMenu(){

@@ -73,7 +73,7 @@
   "LCC_SELECAO_LINE_31":"Festival É Tudo Criança (2019, MG)",
   "LCC_SELECAO_LINE_32":"Projeto Love’Art Resistance (2019, SP)",
 
-  "CEF_TITLE": "Cefalopodes",
+  "CEF_TITLE": "Cefalópodes",
   "CEF_SUBTITLE" :"2018, 5´29”, animação 2D",
   "CEF_AUTOR": "Dir. Vic Casé",
   "CEF_TEXTO_1": "Duda é uma drag queen em início de carreira que se apresenta em bares pequenos e obscuros de uma grande cidade num futuro longínquo. Ela vive um romance com Teo, um pintor nascido em uma das luas de Saturno. Entre conversas e beijos, vemos o retrato de uma intimidade que se constrói através de afeto e carinho; e que se esvai em incômodos silêncios e nos desencontros da vida. ",
@@ -82,14 +82,19 @@
   "CEF_ELENCO": "",
   "CEF_PREMIACOES": "",
 
-  "CAD_TITLE": "CambioDesligo",
+  "CAD_TITLE": "Câmbio, Desligo",
   "CAD_SUBTITLE" :"Em desenvolvimento, 13', animação stop-motion",
   "CAD_AUTOR": "Dir. Gustavo Amaral",
   "CAD_TEXTO_1": "\"Câmbio, Desligo\" é um curta-metragem de animação adulta em stop-motion que narra a história de uma jovem mãe que embarca em uma jornada pelo Brasil dos anos 70 com seus dois filhos: Marta, uma garota cheia de energia, e Luciano, um menino introspectivo que acredita que o pai foi abduzido por marcianos. ",
   "CAD_TEXTO_2": "Quando as crianças estão prestes a descobrir o paradeiro do pai desaparecido, a família toda acaba sendo abduzida… e não por marcianos.",
   "CAD_EQUIPE": "",
   "CAD_ELENCO": "",
-  "CAD_PREMIACOES": ""
+  "CAD_PREMIACOES": "",
 
-
+  "SER_TITLE":"Serviços",
+  "SER_SUBTITLE":"",
+  "SER_AUTOR":"",
+  "SER_TEXTO_1":"",
+  "SER_TEXTO_2":"",
+  "SER_EQUIPE":""
 }
