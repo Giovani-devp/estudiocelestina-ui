@@ -46,6 +46,6 @@
 }
 
 .card:hover {
-  transform: scale(1.05); /* Aumenta a escala em 5% quando passa o mouse por cima */
-  transition: transform 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos */
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
