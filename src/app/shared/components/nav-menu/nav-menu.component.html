@@ -1,10 +1,10 @@
 <!-- Navegation Web -->
 <div class="w-full bg-white hidden sm:flex justify-between items-center px-6 py-1 shadow-4 overflow-y-hidden">
   <div>
-    <img class="mx-auto h-60 cursor-pointer" alt="logo_animado" src="./assets/images/Logo_animado.gif" routerLink="/">
+    <img class="item-hover mx-auto h-60 cursor-pointer" alt="logo_animado" src="./assets/images/Logo_animado.gif" routerLink="/">
   </div>
   <div  class="flex items-center h-full font-ramona-bold">
-    <div *ngFor="let item of itensMenu" (click)="changeRoute(item)" class="mr-12 cursor-pointer">{{item.label}}</div>
+    <div translate *ngFor="let item of itensMenu" (click)="changeRoute(item)" class="item-hover mr-12 cursor-pointer">{{item.label}}</div>
     <div class="flex mr-8 margin">
       <div (click)="changeLanguage('pt')" class="cursor-pointer hover:scale-105 duration-150 m4">
         PT
@@ -13,7 +13,7 @@
         EN
       </div>
     </div>
-    <div>
+    <div class="cursor-pointer item-hover" (click)="instagramRedirect()">
       <img class="h-5" src="./assets/icons/icon-instagram.svg">
     </div>
   </div>
@@ -34,9 +34,9 @@
     </button>
   </div>
 </div>
-<div class="bg-white pt-5 shadow-xl fixed z-50 h-[100vh] top-0 right-0 duration-150 {{menuMobStyle}} overflow-y-hidden">
+<div class="bg-white pt-5 shadow-xl fixed z-50 h-[100vh] top-0 right-0 duration-150 {{menuMobStyle}} overflow-y-hidden font-ramona-bold">
   <div *ngFor="let item of itensMenu">
-    <div class="p-5" (click)="changeRoute(item)">
+    <div translate class="p-5" (click)="changeRoute(item)" >
       {{item.label}}
     </div>
   </div>
@@ -53,7 +53,7 @@
   </div>
   <div class="absolute bottom-0  border border-t-2 w-full " (click)="closeMobMenu()">
     <div class="flex p-5 justify-between">
-      <div>
+      <div (click)="instagramRedirect()">
         <img class="h-7" src="./assets/icons/icon-instagram.svg">
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">

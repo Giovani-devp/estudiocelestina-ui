@@ -1,5 +1,8 @@
 {
-  "TITULO_SOBRE": "The Celestina Studio is a production company that brings together creative",
+  "MENU_FILMES": "Films",
+  "MENU_SOBRE": "About",
+  "MENU_CONTATO": "Contact",
+  "TITULO_SOBRE": "The Estudio Celestina is a production company that brings together creative",
   "TEXTO_1_SOBRE":" professionals willing to change the world.",
   "TEXTO_2_SOBRE":"With a particular interest in socially impactful content, we believe in the potential of art as a means to promote change. Our idea is to carry out projects that inspire people to take care of each other and the environment around them, and for this, it is essential that we view audiovisual media as an effective tool for the critical formation of individuals, collective reflection, and the representation of voices that do not usually resonate.",
 
@@ -10,10 +13,10 @@
   "LCC_TEXTO_2":"Directed and animated by Cassandra Reis and produced by Mariana Lopes, \"Lé com Cré\" was awarded Best Animated Short Film at the Grande Prêmio do Cinema Brasileiro (2019), Best Children's Short Film at Anima Mundi (2018), and Best Animated Short Film at FICI (2018).",
   "LCC_EQUIPE":"Crew:</br>Direction, Art Direction and Animation: Cassandra Reis",
 
-  "LCC_EQUIPE_TITLE": "Crew:",
+  "LCC_EQUIPE_TITLE": "Crew",
   "LCC_EQUIPE_LINE_1": "Direction, Art Direction and Animation: Cassandra Reis",
   "LCC_EQUIPE_LINE_2": "Script: Cassandra Reis and Mariana Lopes",
-  "LCC_EQUIPE_LINE_3": "Production: Mariana Lopes, Victor Casé",
+  "LCC_EQUIPE_LINE_3": "Production: Mariana Lopes, Vic Casé",
   "LCC_EQUIPE_LINE_4": "Puppets and Sets: Cassandra Reis, Gabriel Barreto",
   "LCC_EQUIPE_LINE_5": "Photography and Color Correction: Gabriela Akashi",
   "LCC_EQUIPE_LINE_6": "Direct Sound and Editing: Raquel Vieira",
@@ -23,7 +26,7 @@
   "LCC_EQUIPE_LINE_10": "Audio Mixing: Sandro Costa",
   "LCC_EQUIPE_LINE_11": "Music and Music Direction: Gustavo Kurlat",
 
-  "LCC_ELENCO":"Cast:",
+  "LCC_ELENCO":"Cast",
   "LCC_ELENCO_LINE_1":"Bárbara do Prado Rangel - Red Princess",
   "LCC_ELENCO_LINE_2":"Caetano Anselmo Aidar - Dog",
   "LCC_ELENCO_LINE_3":"João Pedro Simões Santos dos Reis - Adult",
@@ -32,7 +35,7 @@
   "LCC_ELENCO_LINE_6":"Roger Mota - Artist",
   "LCC_ELENCO_LINE_7":"Ysabelly Soares - Princess in blue",
 
-  "LCC_PREMIACOES":"Awards:",
+  "LCC_PREMIACOES":"Awards and festivals",
   "LCC_PREMIACOES_LINE_1":"Carlos Saldanha Award of Best Brazilian Student Short (Anima Mundi 2018, Brazil)",
   "LCC_PREMIACOES_LINE_2":"Audience Award of Best Short for Children (Anima Mundi 2018, Brazil)",
   "LCC_PREMIACOES_LINE_3":"TV Brasil Animada (FICI 2018, Brazil)",

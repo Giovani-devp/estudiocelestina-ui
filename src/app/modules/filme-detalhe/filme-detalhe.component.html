@@ -10,7 +10,7 @@
       <img class="h-img object-cover" src="{{filme.images_3[currentIndex].url}}">
     </div>
   </div>
-  <div class="flex justify-center">
+  <div class="flex justify-center" style="font-size: 16px;">
     <div class="text-center py-10 sm:w-[50%] px-10">
       <h1 translate class="text-[50px] font-ramona-bold font-[500]">{{filme.title}}</h1>
       <h2 translate class="sub font-ramona-light font-[500]">{{filme.sub}}</h2>
@@ -22,19 +22,18 @@
     <img src="./assets/images/Filmes_faixa_1.png">
     <div class="div-faixa flex text-[23px] top-0 text-white w-[100%] -mt-[30px] xl:-mt-[75px] 2xl:-mt-[100px]">
       <div class="txt-size-faixa w-[8%] h-full"> </div>
-      <div class="font-ramona-bold text-[12px] xl:text-[32px] w-[15%] h-full text-center cursor-pointer"(click)="content = 'equipe'">Equipe</div>
+      <div class="font-ramona-bold text-[12px] xl:text-[32px] w-[15%] h-full text-center cursor-pointer faixa-itens" (click)="content = 'equipe'" translate="LCC_EQUIPE_TITLE"></div>
       <div class="txt-size-faixa w-[8%] h-full"> </div>
-      <div class="font-ramona-bold text-[12px] xl:text-[32px] w-[15%] h-full text-gray-900 text-center cursor-pointer" (click)="content = 'elenco'">Elenco</div>
+      <div class="font-ramona-bold text-[12px] xl:text-[32px] w-[15%] h-full text-gray-900 text-center cursor-pointer faixa-itens" (click)="content = 'elenco'" translate="LCC_ELENCO"></div>
       <div class="txt-size-faixa w-[8%] h-full"> </div>
-      <div class="font-ramona-bold text-[12px] xl:text-[32px] w-[30%] h-full text-gray-900 text-center cursor-pointer" (click)="content = 'premios'">Prêmios e Festivais</div>
+      <div class="font-ramona-bold text-[12px] xl:text-[32px] w-[30%] h-full text-gray-900 text-center cursor-pointer faixa-itens" (click)="content = 'premios'" translate="LCC_PREMIACOES"></div>
       <div class="txt-size-faixa w-[8%] h-full"></div>
       <div class="txt-size-faixa w-[8%] h-full"></div>
     </div>
   </div>
-  <div class="mt-32 pb-[300px] pl-[8%] font-ramona-light">
+  <div class="pb-[300px] pl-[8%] font-ramona-light fixa-tecnica">
 
     <div *ngIf="content === 'equipe'" >
-      <b translate>{{filme.equipe}}</b><br>
       <div *ngFor="let item of filme.equipe_txts" translate>
         {{item}}
       </div>
@@ -42,20 +41,18 @@
     </div>
 
     <div *ngIf="content === 'elenco'">
-      <b translate>{{filme.elenco}}</b><br>
       <div *ngFor="let item of filme.elenco_txts" translate>
         {{item}}
       </div>
 
     </div>
 
-    <div *ngIf="content === 'premios'">
-      <b translate>{{filme.premio}}:</b><br>
+    <div *ngIf="content === 'premios'" class="leading-loose">
       <div *ngFor="let item of filme.premiacoes_txts" translate>
         {{item}}
       </div>
 
-      <b translate>{{filme.selecao_oficial}}:</b><br>
+      <p style="margin-top: 10px;"><b translate="LCC_SELECAO"></b></p>
       <div *ngFor="let item of filme.selecao_oficial_txt" translate>
         {{item}}
       </div>
