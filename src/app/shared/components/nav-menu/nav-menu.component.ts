@@ -16,9 +16,9 @@ export class NavMenuComponent {
     ) { }
 
   itensMenu: any = [
-    { label: 'Filmes', url: '/filmes' },
-    { label: 'Sobre', url: '/sobre' },
-    { label: 'Contato', url: '/contato' }
+    { label: "MENU_FILMES", url: '/filmes' },
+    { label: "MENU_SOBRE", url: '/sobre' },
+    { label: "MENU_CONTATO", url: '/contato' }
   ]
 
   public changeRoute(event: any) {
@@ -45,5 +45,9 @@ export class NavMenuComponent {
 
   closeMobMenu(){
     this.menuMobStyle = 'w-[0px]'
+  }
+
+  instagramRedirect() {
+    window.open('https://www.instagram.com/estudiocelestina', '_blank');
   }
 }

@@ -1,4 +1,7 @@
 {
+  "MENU_FILMES": "Filmes",
+  "MENU_SOBRE": "Sobre",
+  "MENU_CONTATO": "Contato",
   "TITULO_SOBRE": "O Estúdio Celestina é uma produtora que reúne",
   "TEXTO_1_SOBRE":" profissionais criativos dispostos a mudar o mundo.",
   "TEXTO_2_SOBRE":"Com um interesse particular para conteúdos de impacto social, acreditamos no potencial da arte como meio de promover mudanças. Nossa ideia é realizar projetos que inspirem pessoas a cuidar umas das outras e do ambiente que as cerca e, para isso, é imprescindível que encaremos o audiovisual como um meio eficaz para a formação crítica do sujeito, reflexão coletiva e representatividade de vozes que não costumam ressoar.",
@@ -9,10 +12,10 @@
   "LCC_TEXTO_1":"Com o objetivo de dar voz às crianças entrevistadas, Lé com Cré aborda os temas Dinheiro, Medo e Coisas de menina & menino contados de um jeito fofo e esquisito.",
   "LCC_TEXTO_2":"Dirigido e animado por Cassandra Reis e produzido por Mariana Lopes, Lé com Cré foi eleito melhor curta de animação no Grande Prêmio do Cinema Brasileiro (2019), melhor curta infantil pelo Anima Mundi (2018) e melhor curta de animação pelo FICI (2018).",
 
-  "LCC_EQUIPE_TITLE": "Equipe:",
+  "LCC_EQUIPE_TITLE": "Equipe",
   "LCC_EQUIPE_LINE_1": "Direção, Direção de Arte e Animação: Cassandra Reis",
   "LCC_EQUIPE_LINE_2": "Roteiro: Cassandra Reis e Mariana Lopes",
-  "LCC_EQUIPE_LINE_3": "Produção: Mariana Lopes e Victor Casé",
+  "LCC_EQUIPE_LINE_3": "Produção: Mariana Lopes e Vic Casé",
   "LCC_EQUIPE_LINE_4": "Bonecos e Cenário: Cassandra Reis e Gabriel Barreto",
   "LCC_EQUIPE_LINE_5": "Direção de Fotografia e Correção de Cor: Gabriela Akashi",
   "LCC_EQUIPE_LINE_6": "Captação de Som e Montagem: Raquel Vieira",
@@ -22,7 +25,7 @@
   "LCC_EQUIPE_LINE_10": "Mixagem: Sandro Costa",
   "LCC_EQUIPE_LINE_11": "Música e Direção Musical: Gustavo Kurlat",
 
-  "LCC_ELENCO":"Elenco:",
+  "LCC_ELENCO":"Elenco",
   "LCC_ELENCO_LINE_1":"Bárbara do Prado Rangel - Princesa Ruiva",
   "LCC_ELENCO_LINE_2":"Caetano Anselmo Aidar - Cachorro",
   "LCC_ELENCO_LINE_3":"João Pedro Simões Santos dos Reis - Adulto",
@@ -31,7 +34,7 @@
   "LCC_ELENCO_LINE_6":"Roger Mota - Artista",
   "LCC_ELENCO_LINE_7":"Ysabelly Soares - Princesa de azul",
 
-  "LCC_PREMIACOES":"Premiações",
+  "LCC_PREMIACOES":"Prêmios e Festivais",
   "LCC_PREMIACOES_LINE_1":"Prêmio Carlos Saldanha de Melhor Curta de Estudante Brasileiro (Anima Mundi 2018, Brasil)",
   "LCC_PREMIACOES_LINE_2":"Prêmio do Júri Popular de Melhor Curta Infantil (Anima Mundi 2018, Brasil)",
   "LCC_PREMIACOES_LINE_3":"TV Brasil Animada (FICI 2018, Brasil)",
