@@ -144,7 +144,11 @@ export class FilmesService {
       autor:'CEF_AUTOR',
       texto_1:'CEF_TEXTO_1',
       texto_2:'CEF_TEXTO_2',
-      equipe:'CEF_EQUIPE'
+      equipe:'CEF_EQUIPE',
+      equipe_txts:['CEF_EQUIPE_LINE_1','CEF_EQUIPE_LINE_2','CEF_EQUIPE_LINE_3','CEF_EQUIPE_LINE_4','CEF_EQUIPE_LINE_5','CEF_EQUIPE_LINE_6','CEF_EQUIPE_LINE_7','CEF_EQUIPE_LINE_8','CEF_EQUIPE_LINE_9','CEF_EQUIPE_LINE_10','CEF_EQUIPE_LINE_11','CEF_EQUIPE_LINE_12'],
+      elenco_txts:['CEF_ELENCO_LINE_1','CEF_ELENCO_LINE_2','CEF_ELENCO_LINE_3'],
+      premiacoes_txts:['CEF_PREMIACOES_LINE_1'],
+
     },
     {
       id:'CambioDesligo',
@@ -162,7 +166,10 @@ export class FilmesService {
       autor:'CAD_AUTOR',
       texto_1:'CAD_TEXTO_1',
       texto_2:'CAD_TEXTO_2',
-      equipe:'CAD_EQUIPE'
+      equipe:'CAD_EQUIPE',
+      equipe_txts:['CAD_EQUIPE_LINE_1'],
+      elenco_txts:['CAD_ELENCO_LINE_1'],
+      selecao_oficial_txt:['CAD_SELECAO_LINE_1','CAD_SELECAO_LINE_2','CAD_SELECAO_LINE_3']
     },
     {
       id:'Servicos',

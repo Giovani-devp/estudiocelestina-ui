@@ -82,9 +82,29 @@
   "CEF_AUTOR": "Dir. Vic Casé",
   "CEF_TEXTO_1": "Duda is an up-and-coming drag queen who performs in small, obscure bars in a large city in a distant future. She is in a romance with Teo, a painter born on one of Saturn's moons. Amidst conversations and kisses, we witness the portrayal of an intimacy built through affection and tenderness; one that fades away in uncomfortable silences and life's misalignments.",
   "CEF_TEXTO_2": "Dissolved by the end of the relationship, Duda seeks solace in her childhood friend, Lana, who tells her a story about cephalopods and chelonians, a reflection on vulnerability and confinement. Gradually, Duda finds a way to restore herself.",
+
   "CEF_EQUIPE": "",
+  "CEF_EQUIPE_LINE_1":"Script and Direction: Vic Casé",
+  "CEF_EQUIPE_LINE_2":"Production: Mariana Lopes and Vic Casé",
+  "CEF_EQUIPE_LINE_3":"Animation Direction: Jotapê Stanzioni Brasiliense",
+  "CEF_EQUIPE_LINE_4":"Storyboard Artist: Heitor Pinheiro",
+  "CEF_EQUIPE_LINE_5":"Concept Arts: jan mesquita",
+  "CEF_EQUIPE_LINE_6":"Background Artist: Larii Lucca",
+  "CEF_EQUIPE_LINE_7":"Original Voice Direction: Bruna Mass",
+  "CEF_EQUIPE_LINE_8":"Animation: Isabela de Brito, Jotapê Stanzioni Brasiliense and Marcela Moro",
+  "CEF_EQUIPE_LINE_9":"Clean up/Color: Beatriz Dutra and Letícia Ayumi I Trindade",
+  "CEF_EQUIPE_LINE_10":"Motion Design e Finalization: Tica Nami",
+  "CEF_EQUIPE_LINE_11":"Sound Design: Diana Ragnole",
+  "CEF_EQUIPE_LINE_12":"Musical Production: Podeserdesligado",
+
   "CEF_ELENCO": "",
+
+  "CEF_ELENCO_LINE_1":"Leyllah - Duda",
+  "CEF_ELENCO_LINE_2":"Gabriel Leite - Téo",
+  "CEF_ELENCO_LINE_3":"Bruna Mass - Lana",
+
   "CEF_PREMIACOES": "",
+  "CEF_PREMIACOES_LINE_1":"Soon",
 
   "CAD_TITLE": "Over and Out",
   "CAD_SUBTITLE" :"In production, 13', stop-motion animation",
@@ -92,13 +112,15 @@
   "CAD_TEXTO_1": "\"Over and out\" is a short adult stop-motion animation film that tells the story of a young mother embarking on a journey through 1970s Brazil with her two children: Marta, a lively girl, and Luciano, an introspective boy who believes his father was abducted by Martians.",
   "CAD_TEXTO_2": "Just as the children are about to discover the whereabouts of their missing father, the entire family ends up being abducted... but not by Martians.",
   "CAD_EQUIPE": "",
+  "CAD_EQUIPE_LINE_1": "Soon",
   "CAD_ELENCO": "",
+  "CAD_ELENCO_LINE_1": "Soon",
   "CAD_PREMIACOES": "",
 
   "SER_TITLE":"Services",
   "SER_SUBTITLE":"",
   "SER_AUTOR":"",
-  "SER_TEXTO_1":"",
+  "SER_TEXTO_1":"Motion Graphics Animation Services for companies and individuals looking to enhance the representation of their ideas with dynamism. Animation material adapted to your marketing preferences, reflecting your brand identity, and optimized for various platforms and audiences.",
   "SER_TEXTO_2":"",
   "SER_EQUIPE":""
 }
