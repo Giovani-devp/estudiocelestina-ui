@@ -18,7 +18,7 @@
       <h4 translate class="mt-4 font-ramona-light font-[500]">{{filme.texto_1}}</h4>
     </div>
   </div>
-  <div class="relative">
+  <div class="relative" *ngIf="filme.id != 'Servicos'">
     <img src="./assets/images/Filmes_faixa_1.png">
     <div class="div-faixa flex text-[23px] top-0 text-white w-[100%] -mt-[30px] xl:-mt-[75px] 2xl:-mt-[100px]">
       <div class="txt-size-faixa w-[8%] h-full"> </div>
@@ -52,7 +52,7 @@
         {{item}}
       </div>
 
-      <p style="margin-top: 10px;"><b translate="LCC_SELECAO"></b></p>
+      <p style="margin-top: 15px;"><b [translate]="filme.selecao_oficial"></b></p>
       <div *ngFor="let item of filme.selecao_oficial_txt" translate>
         {{item}}
       </div>
