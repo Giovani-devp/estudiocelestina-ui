@@ -1,5 +1,6 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { VideoService } from 'src/app/shared/services/video.service';
 
 @Component({
   selector: 'app-pagina-inicial',
@@ -16,20 +17,30 @@ export class PaginaInicialComponent implements OnInit {
 
   ]
   @ViewChild('divVideo') divVideo!: ElementRef;
+  videoPath = true;
 
   constructor(
-    private route: Router
+    private route: Router,
+    public videoService: VideoService,
   ) {
 
   }
 
   ngOnInit(): void {
+    this.atualizaVideo();
 
   }
-
+  atualizaVideo(){
+  this.videoService.videoPath$.subscribe(path => {
+    if (path === 'pt') {
+      this.videoPath = true
+    } else if (path === 'en') {
+      this.videoPath = false;
+    }
+  });
+}
   navegate(rota: any) {
     this.route.navigate([rota]);
   }
-
 
 }

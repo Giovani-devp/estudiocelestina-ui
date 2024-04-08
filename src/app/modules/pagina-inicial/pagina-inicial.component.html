@@ -1,7 +1,12 @@
 <div id="div-video" class="bg-cinza" #divVideo>
-  <div>
+  <div *ngIf="videoPath">
     <video [autoplay]="true" [muted]="true" [loop]="true" class="w-full -ml-[1px]">
       <source src="./assets/videos/CELESTINA_home-banner-tv_EDIT.mp4" />
+    </video>
+  </div>
+  <div *ngIf="!videoPath">
+    <video [autoplay]="true" [muted]="true" [loop]="true" class="w-full -ml-[1px]">
+      <source src="./assets/videos/CELESTINA_home-banner-tv_EDIT_EN.mp4" />
     </video>
   </div>
 </div>

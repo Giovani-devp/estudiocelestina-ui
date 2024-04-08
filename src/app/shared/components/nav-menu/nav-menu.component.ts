@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { VideoService } from '../../services/video.service';
 
 @Component({
   selector: 'app-nav-menu',
@@ -12,7 +13,8 @@ export class NavMenuComponent {
 
   constructor(
     private router: Router,
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private videoService: VideoService
     ) { }
 
   itensMenu: any = [
@@ -37,6 +39,12 @@ export class NavMenuComponent {
 
   changeLanguage(lang: string) {
     this.translateService.use(lang);
+    if (lang === 'en') {
+      this.videoService.setVideoPath('en');
+    } else if (lang === 'pt') {
+      this.videoService.setVideoPath('pt');
+    }
+
   }
 
   openMobMenu(){
