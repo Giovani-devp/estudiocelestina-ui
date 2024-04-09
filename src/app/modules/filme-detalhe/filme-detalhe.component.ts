@@ -32,20 +32,8 @@ export class FilmeDetalheComponent {
     this.scrollToTop();
   }
 
-  // @HostListener('window:scroll', ['$event'])
-  // onScroll(event: any): void {
-  //   const scrollPosition = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
-
-  //   const newIndex = Math.floor(scrollPosition / (window.innerHeight / 11));
-
-  //   if (newIndex !== this.currentIndex && newIndex >= 0 && newIndex < this.filme.images_1.length) {
-  //     this.currentIndex = newIndex;
-  //   }
-  // }
-
     @HostListener('window:scroll', ['$event'])
     onScroll(event: any): void {
-      console.log(event);
       if (!this.scrolling) {
         this.scrolling = true;
         setTimeout(() => {
