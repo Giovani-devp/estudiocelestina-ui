@@ -1,27 +1,31 @@
-# EstudiocelestinaUi
+# 🎬 Projeto Produtora de Animações
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+Este projeto foi desenvolvido para uma produtora de animações chamada estudio celestina, está no github a nível de portfólio e identidade visual de forma moderna e responsiva.
 
-## Development server
+## 🚀 Tecnologias Utilizadas
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Angular 16](https://angular.io/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-## Code scaffolding
+## 📌 Funcionalidades
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Layout responsivo
+- Componentes reutilizáveis
+- Estilo visual moderno com Tailwind
+- Estrutura pronta para deploy como SPA
 
-## Build
+## 🛠️ Como rodar localmente
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Clone o repositório
+git clone https://github.com/Giovani-devp/estudiocelestina-ui.git
 
-## Running unit tests
+# Entre na pasta do projeto
+cd estudiocelestina-ui
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Instale as dependências
+npm install
 
-## Running end-to-end tests
+# Rode o projeto
+ng serve
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Desenvolvido por Giovani Pereira e Almir Junior.
